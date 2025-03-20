@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	height:1080px;	
+}
+.indexSection
+{
+	margin-top:20%;
+	padding-bottom:435px;
+}
+h1,h2,h3
+{
+	margin:0;	
+}
+h1
+{
+	text-align:center;
+	font-style:italic;/*斜体*/
+	font-size:100px;
+	font-family:"MS Serif", "New York", serif;
+	background:linear-gradient(to bottom,rgba(255,255,255,1),rgba(0,153,255,1));
+	-webkit-background-clip:text;/*文本渐变*/
+	color:transparent;/*原字体颜色透明*/
+}
+h2
+{
+	text-align:center;
+	font-size:70px;
+	font-family:"Comic Sans MS", cursive;
+	background:linear-gradient(rgba(255,255,255,1) 0%,rgba(0,153,255,1) 80%);
+	-webkit-background-clip:text;/*文本渐变*/
+	color:transparent;/*原字体颜色透明*/
+	margin-bottom:50px;
+}
+h3
+{
+	text-align:center;
+	font-size:40px;
+	font-style:italic;
+	font-family:"楷体";
+	color:rgba(255,255,255,0.8);
+	text-shadow:5px 0 10px black;
+}
+.signup-signin,.loggedin{
+	float:right;
+	/* background-color: green; */
+}
+
+.sign-up{
+	border-right: 1px solid ;
+}
+.sign-in{
+
+}
+.defaultimg{
+	width: 40px;/*flex时最大使用60px*/
+	height: 100%;
+	border-radius:50%;
+	vertical-align:middle;
+}

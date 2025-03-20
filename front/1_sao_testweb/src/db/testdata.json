@@ -1,0 +1,12 @@
+{
+    "testdata":[
+        "sex":"男",
+        "isage":"1",
+        "isemail":"12@xx.com",
+        "istel":"13680434899",
+        "acg":"接触过",
+        "checkboxs":[ null, null, null, null, true ],
+        "interests":[ "刀剑神域剧场版序列之争" ],
+        "istextarea":"1"
+    ]
+}

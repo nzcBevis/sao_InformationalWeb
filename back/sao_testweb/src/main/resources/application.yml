@@ -1,0 +1,13 @@
+#同级目录下读取的顺序是先读取application.properties，读取application.yaml
+
+server:
+  port: 8081
+spring:
+  application:
+    name: Httpserver
+  #连接数据库
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver   #数据库驱动(mysql6以后是com.mysql.cj.jdbc.Driver)
+    url: jdbc:mysql://localhost:3306/saotestweb?useSSL=false&useUnicode=true&characterEncoding=utf-8&severTimezone=GMT%2B8 #北京东八区
+    username: root
+    password: root

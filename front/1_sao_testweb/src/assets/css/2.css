@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+
+.mission .container
+{
+	margin:0 auto;
+	padding:0 15px;
+	width:100%;	
+}
+.mission {
+    margin: 80px 0;
+	margin-top:100px;
+	background:url(../images/mission_bg.jpg) no-repeat;/*saop_asuna_wp_pc.png*/
+	background-position:top;
+	background-size:cover;
+}
+.mission-header h3 {
+    font-family:'Droid Serif',serif;
+    font-size: 2em;
+    color: #CCC;
+    text-align: center;
+}
+.mission-container{
+    margin-top: 35px;
+	
+}
+.mission_div{
+    width: 50%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding:0 15px;
+}
+.mission-left
+{
+	margin-top:81px;	
+}
+.mission-left video,.mis-left img
+{
+	width:100%;	
+}
+.mis-one {
+    margin-bottom: 30px;
+}
+.mis-left {
+    width: 15%;
+    float: left;
+	margin-top:25px;
+}
+.mis-right {
+    width: 82%;
+    float: right;
+}
+.mis-right h3 {
+    font-size: 1.25em; /*20px÷16px=1.25*/
+    color: #FFF;
+}
+.mis-right p {
+    font-size: 0.875em;/*14px÷16px=0.875*/
+	font-weight:bold;
+    color:black;
+    line-height: 1.8em;
+    margin: 12px 0 0 0;
+}
+
+@media (max-width: 650px) {/*当屏幕小于650px*/
+	.mission-header h3
+	{
+        font-size: 1.5em;
+    }
+    .mis-right h3 {
+        font-size: 1em;
+    }
+    .mission {
+        padding: 45px 0;
+    }
+    .mission-right, .mission-left {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+    .mission-right {
+        margin: 30px 0 0 0;
+    }
+    .mis-left {
+        width: 13%;
+       /* margin-top: 3px;*/
+    }
+    .mis-right {
+        width: 82%;
+    }
+    .mis-right p {
+        margin: 10px 0 0 0;
+    }
+    .mis-one {
+        margin-bottom: 24px;
+    }
+    .mis-one:nth-child(3) {
+	/*类名为mis-one中的第三个子元素*/
+        margin: 0;
+    }
+	.mission {
+		background:url(../images/Rosario.jpg);
+		background-position:top;
+	}
+	/* button{
+		bottom:185px;
+		left:45%;
+		display:block;
+	}	 */
+}

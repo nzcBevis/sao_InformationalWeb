@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<title>219240222聂子超</title>
+<link href="/css/common.css" type="text/css" rel="stylesheet">
+<link href="/css/3.css" type="text/css" rel="stylesheet">
+<link href="/fonts/font-awesome.min.css" type="text/css" rel="stylesheet">
+	<style>
+		.btm
+		{
+			display:none;/*该元素隐藏*/
+			width:50px;
+			height:2px;
+			position:absolute;
+			background:#FFF;
+			margin:0 50px;
+			left:775px;/*起始位置*/
+			bottom:0;
+			transition-duration:0.5s;	
+		}
+    </style>
+</head>
+
+<body>
+        <!--header-->
+        <header class="theHeader">
+            <div class="audio-controller">
+                <img  class="controlIcon" src="/images/mplay.png"  id="audio_headerImg" onClick="isImg()" alt="无法显示图片">
+                <!--<img class="img2" src="images/mpause.png"  id="audio_headerimg" onClick="isImg()">-->
+                <audio loop id="bgMusic" >
+                    <source class="isAudio" src="/sounds/crossing Field.mp3" type="audio/mp3" >
+                    <!--<source class="isAudio" src="sounds/crossing Field.mp3" type="audio/mp3">-->
+                </audio>
+        	</div>
+            <div class="container">
+            	<nav>
+                <input type="checkbox" id="togglebox">
+                <ul>
+                	<li><a href="index.html">首页</a></li>
+                    <li><a href="#">番剧</a></li>
+                    <li><a href="movie.html">电影</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">画廊</a></li>
+                    <li><a href="questionnaire.html">问卷</a></li>
+                </ul>
+                <!--汉堡菜单按钮-->
+                <label class="menu" for="togglebox">
+                	<img class="openMenu" src="/images/openMenu.png" id="selectMenu">
+                </label>
+                </nav>
+                <div class="btm"></div><!---->
+            </div>     
+         </header>
+         <!--//header-->
+         <!--section-->
+         <section class="section">
+			<form class="contact_form" action="http://127.0.0.1:5502/index.html" method="post" name="contact_form" enctype="multipart/form-data">
+                <!--离线状态下action='index.html'实现携带数据跳转-->
+                <ul>
+                	<li class="usually">
+                            <h2>test问卷调查</h2>
+                        </li>
+                        <!-- <li class="special">
+                            <span>性别:</span>
+                            <input type="radio" name="sex" id="male" checked>
+                            <label for="male">男</label>
+                            <input type="radio" name="sex" id="female" >
+                            <label for="female">女</label>
+                        </li>                        -->
+                        <li class="usually">
+                            <span>年龄:</span>
+                            <input type="number" id="age" name="age" min="1" max="99" required>
+                        </li>
+                        <li class="usually">
+                            <span>联系邮箱:</span>
+                            <input type="email" name="email" placeholder="javin@example.com" required>
+                        </li>
+                        <li class="usually">
+                            <span>联系电话:</span>
+                            <input type="tel" id="phone" name="phone" maxlength="11" oninvalid="setCustomValidity('电话号码长度为8-11！')" οninput="setCustomValidity('')" required>										 						<!--oninvalid=“setCustomValidity(‘提示内容’)"-->
+                        </li>
+                        <!-- <li class="special">
+                            <span>您接触过ACG文化:</span>
+                            <input type="radio" name="acg" id="accept" checked>
+                            <label for="accept">接触过</label>
+                            <input type="radio" name="acg" id="know" >
+                            <label for="know">听过但没接触过</label>
+                            <input type="radio" name="acg" id="no" >
+                            <label for="no">没接触过</label>
+                        </li> -->
+                        <!-- <li class="special">
+                            <span>您看过或听过哪些刀剑系列的动漫或者游戏:</span>
+                            <img src="/images/attention.png" class="specialImg"><br/>
+                            <input type="checkbox" id="SwordArtOnlineⅠ" name="interests">
+                            <label for="SwordArtOnlineⅠ">刀剑神域第一季</label>
+                            <input type="checkbox" id="SwordArtOnlineⅡ" name="interests">
+                            <label for="SwordArtOnlineⅡ">刀剑神域第二季</label><br/>
+                            <input type="checkbox" id="SwordArtOnlineⅢ" name="interests">
+                            <label for="SwordArtOnlineⅢ">刀剑神域第三季</label>
+                            <input type="checkbox" id="SwordArtOnlineMovie" name="interests">
+                            <label for="SwordArtOnlineMovie">刀剑神域剧场版序列之争</label><br/>
+                            <input type="checkbox" id="SwordArtOnlineAlternative" name="interests">
+                            <label for="SwordArtOnlineAlternative">&nbsp;&nbsp;&nbsp;刀剑神域外传</label>
+                            <input type="checkbox" id="SAOMD" name="interests">
+                            <label for="SAOMD">刀剑神域记忆碎片</label><br/>
+                            <input type="checkbox" id="SAOARS/UB" name="interests">
+                            <label for="SAOARS/UB">刀剑神域ARS/UB</label>
+                            <input type="checkbox" id="SAOIF" name="interests">
+                            <label for="SAOIF">刀剑神域IF</label><br/>
+                            <input type="checkbox" id="none" name="interests">
+                            <label for="none">没看过，没听过</label>
+                        </li> -->
+                        <!-- <li class="usually">
+                            <span>对该网页有什么改进或建议:</span>
+                            <textarea rows="10" cols="200" name="introduction" 
+                                placeholder="若无改进或建议填无。" class="message" required></textarea>
+                        </li> -->
+                        <!-- <li>
+                        </li>type="submit"  -->
+                    </ul>
+                    <button class="submit" onClick="Submit()">提交</button>
+            </form>
+         </section>
+         <!--//section-->
+         <!--footer-->
+         <div class="footer">
+            <div class="container">
+            	<p>
+                 	<i class="fa fa-laptop"></i>
+                    &copy; 2021 219240222聂子超 All Rights Reserved | Design by<a href="#">聂子超</a>
+                </p>
+                <div class="clearfix"></div>
+            </div>
+    	 </div>   
+         <!--//footer-->
+</body>
+<script type="text/javascript" src="/js/htmlcommon.js"></script>
+    <script>
+    	var lis=document.getElementsByTagName("a");
+		var btm=document.getElementsByClassName("btm")[0];
+    	for(var i=0;i<lis.length;i++)
+		{	
+            lis[i].index=i;
+		}
+		for(var i=0;i<lis.length;i++)
+		{	
+			lis[i].onmouseenter=function()
+			{	
+					btm.style.display="block";//
+					btm.style.left=155*this.index+"px";		
+			}
+			lis[i].onmouseleave=function()
+			{	
+				btm.style.left="775px";
+				//btm.style.display="none";
+			}
+		}/**/		
+		var phone=document.getElementById("phone");
+		var age=document.getElementById("age");
+        var formData = new FormData();
+        formData.append('username', username);
+        formData.append('password', password);
+		function Submit()
+		{
+			if(age.value=="" || phone.value.length<7)
+			{
+				alert('请填写一下相关信息');
+			}
+			else
+			{
+				alert('感谢您的反馈！正在返回首页！');
+			}
+		}
+        let form = document.querySelector('form');
+        form.addEventListener('submit',function(e){
+            // e.preventDefault();
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST','http://127.0.0.1:5502/index.html');
+            // xhr.setRequestHeader('Content-Type', 'application/json');//设置自定义请求头
+            // xhr.setRequestHeader('Content-Type', 'multipart/form-data');
+            // let formdata = ruleForm
+            xhr.send();
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState===4){
+                    if(xhr.status>=200 && xhr.status<300){
+                        //请求成功
+                        window.location.href = '/index.html';//不同端口下
+                        console.log(xhr.response);
+                    }else{
+                        //请求失败
+                        console.error(xhr.statusText);
+                    }
+                }
+            }
+        })	
+    </script>
+</html>
+
+

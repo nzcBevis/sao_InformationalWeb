@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Received</title>
+</head>
+<body>
+    <h1>Data Received</h1>
+    <script>
+        const queryParams = new URLSearchParams(window.location.search);
+        const name = queryParams.get('name');
+        document.write(`Hello, ${name}`);
+    </script>
+</body>
+</html>

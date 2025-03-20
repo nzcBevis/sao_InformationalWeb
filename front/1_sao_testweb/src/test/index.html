@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<title>219240222聂子超</title>
+<link href="/css/common.css" type="text/css" rel="stylesheet">
+<link href="/css/1.css" type="text/css" rel="stylesheet">
+<link href="/fonts/font-awesome.min.css" type="text/css" rel="stylesheet">
+	<style>
+		.btm
+		{
+			display:none;/**/
+			width:50px;
+			height:2px;
+			position:absolute;
+			background:#FFF;
+			margin:0 50px;
+			left:0px;/*起始位置*/
+			bottom:0;
+			transition-duration:0.5s;	
+		}
+    </style>
+</head>
+
+<body> 
+        <!--header-->
+        <header class="theHeader">
+            <div class="audio-controller">
+            	<!-- 方法一:--> 
+                <img  class="controlIcon" src="/images/mplay.png"  id="audio_headerImg" onClick="isImg()" alt="无法显示图片"> 
+                <audio loop id="bgMusic" >
+                    <source class="isAudio" src="/sounds/crossing Field.mp3" type="audio/mp3" > 
+                    <!--<source class="isAudio" src="sounds/unlasting.mp3" type="audio/mp3">-->
+                </audio>
+                <!-- 方法二:
+                <img class="controlIconFirst" src="images/mpause.png"  id="audio_headerimgFirst" onClick="img()" alt="无法显示图片">
+                <img class="controlIconSecond" src="images/mplay.png" id="audio_headerimgSecond" onClick="img()" alt="无法显示图片">
+                <audio loop  autoplay="autoplay" muted="muted" id="bgMusic" >
+                    <source class="isAudio" src="sounds/unlasting.mp3" type="audio/mp3" >
+                </audio>-->
+        	</div>
+            <div class="container">
+            	<nav>
+                    <input type="checkbox" id="togglebox">
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="#">番剧</a></li>
+                        <li><a href="movie.html">电影</a></li>
+                        <li><a href="#">游戏</a></li>
+                        <li><a href="#">画廊</a></li>
+                        <li><a href="questionnaire.html">问卷</a></li>
+                    </ul>
+                    <!--汉堡菜单按钮-->
+                    <label class="menu" for="togglebox">
+                        <img class="openMenu" src="/images/openMenu.png" id="selectMenu" alt="无法显示图片">
+                    </label>
+                </nav>
+                <div class="btm"></div>
+            </div>     
+         </header>
+         <!--//header-->
+         <!--section-->
+         <section class="indexSection">
+         	<div>
+            	<h1>Sword Art Online</h1>
+                <h2>刀剑神域</h2>
+                <h2>test</h2>
+                <h3>“这虽然是游戏，但可不是闹着玩的。”</h3>
+            </div>
+         </section>
+         <!--//section-->
+         <!--footer-->
+         <div class="footer">
+            <div class="container">
+                <p> 
+                	<i class="fa fa-laptop"></i>
+                    &copy; 2021 219240222聂子超 All Rights Reserved | Design by<a href="#">聂子超</a>
+                </p>
+                <div class="clearfix"></div>
+            </div>
+    	 </div>   
+         <!--//footer-->
+</body>
+	<script type="text/javascript" src="/js/htmlcommon.js"></script>
+    <script>
+    	var lis=document.getElementsByTagName("a");
+		var btm=document.getElementsByClassName("btm")[0];
+    	for(var i=0;i<lis.length;i++)
+		{	
+			lis[i].index=i;
+		}
+		for(var i=0;i<lis.length;i++)
+		{	
+			lis[i].onmouseenter=function()
+			{	
+					btm.style.display="block";//
+					btm.style.left=155*this.index+"px";		
+			}
+			lis[i].onmouseleave=function()
+			{	
+				btm.style.left="0px";/*回到原来位置*/
+				//btm.style.display="none";
+			}
+		}/**/	
+    </script>
+</html>
