@@ -28,7 +28,7 @@
 **判断浏览器内核类型实现背景音乐是否自动播放**  
 <img src="/Scrrenshots/musicIsAutoPlay.png" alt="判断浏览器内核控制音乐是否自动播放" width="200" heigth="300">  
 
-**点击图标时停止旋转图标同时暂停背景音乐，重新点击后再次旋转并重新播放音乐：**
+**点击图标时停止旋转图标同时暂停背景音乐，重新点击后再次旋转并重新播放音乐：**  
 <img src="/Scrrenshots/clickMusicIcon.png" alt="点击音乐图片触发事件" width="200" heigth="300">  
 
 # 通过学习vue等前端所需技术知识后，将本科时期的web期末作品中的部分html代码使用vue重新构建。以下为web期末作品的代码说明以及部分html修改为vue的详情：  
