@@ -102,7 +102,7 @@
 #### Java部分：  
 **application.yml文件:**  
 <img src="/Scrrenshots/applicationYml.png" alt="application.yml文件" width="200" heigth="300">  
-**saotestweb.sql文件:**  
+**saoInformationalWeb.sql文件:**  
 <img src="/Scrrenshots/sql.png" alt="sql文件" width="200" heigth="300">  
 **DataConfig.java文件：**  
 <img src="/Scrrenshots/dataConfig.png" alt="DataConfig文件" width="200" heigth="300">  

@@ -8,11 +8,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-
 /*
 * @RestController注解等价于@ResponseBody ＋ @Controller。
 * @RestController和@Controller的共同点是都用来表示Spring某个类是否可以接收HTTP请求，
@@ -55,13 +50,13 @@ public class PostDataController {
         String email = ruleForm.getIsemail();
         String tel = ruleForm.getIstel();
         String  text = ruleForm.getIstextarea();
-        String sql = "insert into saowebtest values(?,?,?,?,?,?,?)";
+        String sql = "insert into userInformation values(?,?,?,?,?,?,?)";
         jdbcTemplate.update(sql,sex,age,email,tel,acg,interest,text);//"刀剑神域第一季"
         return "Cross-origin request successful";
 
 //        try() {//增加数据
             //INSERT INTO 表名[所有列名] VALUES(值1,值2,...);(sex,age,email,tel,acg,interest,textarea)
-//            String sql = "insert into saowebtest values(?,?,?,?,?,?,?)";
+//            String sql = "insert into userInformation values(?,?,?,?,?,?,?)";
 //            jdbcTemplate.update(sql,sex,age,email,tel,acg,interest,text);//"刀剑神域第一季"
 //            return "Cross-origin request successful";
 //        }

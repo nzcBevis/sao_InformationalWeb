@@ -1,7 +1,7 @@
 --复制代码到Navicat新建查询
 create database if not exists saoInformationalWeb;
 use saoInformationalWeb;
-create table saoInformationalWeb(
+create table userInformation(
     sex varchar(2) not null,  --enum('男','女')
     age int not null,
     email varchar(100) not null,
